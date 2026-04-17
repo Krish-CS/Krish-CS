@@ -1,5 +1,4 @@
 ## Hi there 👋
-<img src="https://raw.githubusercontent.com/Krish-CS/Krish-CS/output/snake.svg" alt="Snake animation" /> 
 
 <!--
 **Krish-CS/Krish-CS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
