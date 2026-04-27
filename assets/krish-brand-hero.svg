@@ -1,6 +1,6 @@
 <svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Krishkanth Karthik animated aurora banner</title>
-  <desc id="desc">An animated aqua, teal and gold aurora profile banner inspired by the Krish CS logo.</desc>
+  <title id="title">Krishkanth Karthik animated profile banner</title>
+  <desc id="desc">An animated aqua, teal, white and gold profile banner inspired by the Krish CS logo.</desc>
   <defs>
     <radialGradient id="sunGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(232 118) rotate(53) scale(238 160)">
       <stop stop-color="#FFF7D6"/>
@@ -13,7 +13,7 @@
       <stop offset=".56" stop-color="#25D6CF"/>
       <stop offset="1" stop-color="#0D8BA4"/>
     </radialGradient>
-    <linearGradient id="aurora" x1="0" x2="1200" y1="420" y2="0" gradientUnits="userSpaceOnUse">
+    <linearGradient id="brandSweep" x1="0" x2="1200" y1="420" y2="0" gradientUnits="userSpaceOnUse">
       <stop stop-color="#07101D"/>
       <stop offset=".22" stop-color="#073E51"/>
       <stop offset=".44" stop-color="#13D6D2"/>
@@ -46,7 +46,7 @@
   </defs>
 
   <rect width="1200" height="420" rx="34" fill="url(#deep)"/>
-  <rect width="1200" height="420" rx="34" fill="url(#aurora)" opacity=".17">
+  <rect width="1200" height="420" rx="34" fill="url(#brandSweep)" opacity=".17">
     <animate attributeName="opacity" values=".12;.26;.12" dur="7s" repeatCount="indefinite"/>
   </rect>
 
@@ -80,7 +80,7 @@
     </use>
   </g>
 
-  <g transform="translate(82 68)" filter="url(#softShadow)">
+  <g transform="translate(70 68)" filter="url(#softShadow)">
     <circle cx="160" cy="146" r="118" fill="#0D1628" opacity=".78"/>
     <circle cx="160" cy="146" r="106" fill="url(#aquaCore)"/>
     <circle cx="160" cy="146" r="129" stroke="#F7D78B" stroke-opacity=".56" stroke-width="3" stroke-dasharray="16 12">
@@ -90,15 +90,19 @@
       <animateTransform attributeName="transform" type="rotate" from="360 160 146" to="0 160 146" dur="16s" repeatCount="indefinite"/>
     </circle>
     <text x="160" y="156" text-anchor="middle" font-family="Trebuchet MS, Verdana, sans-serif" font-size="40" font-weight="800" fill="#FFFFFF" letter-spacing="1">KRISH</text>
-    <text x="278" y="155" text-anchor="middle" font-family="Trebuchet MS, Verdana, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF" stroke="#07111D" stroke-width="2">CS</text>
+    <g transform="translate(312 118)">
+      <ellipse cx="0" cy="28" rx="44" ry="33" fill="#FFFFFF" opacity=".08"/>
+      <text x="0" y="42" text-anchor="middle" font-family="Trebuchet MS, Verdana, sans-serif" font-size="36" font-weight="900" fill="#FFFFFF" stroke="#07111D" stroke-width="2.4" paint-order="stroke fill">CS</text>
+      <path d="M-31 54 C-12 65 18 66 36 52" stroke="#F6C66D" stroke-width="3" stroke-linecap="round" opacity=".72"/>
+    </g>
   </g>
 
-  <g transform="translate(410 102)">
-    <text x="0" y="76" font-family="Trebuchet MS, Verdana, sans-serif" font-size="62" font-weight="900" fill="#FFFFFF">Krishkanth Karthik</text>
-    <text x="4" y="122" font-family="Verdana, sans-serif" font-size="22" font-weight="700" fill="#BFFFFA">AI Builder  |  Full-Stack Developer  |  Mobile App Maker</text>
-    <text x="4" y="169" font-family="Consolas, Monaco, monospace" font-size="24" font-weight="700" fill="#28F7EA">aurora-powered projects, data tools and mobile products</text>
+  <g transform="translate(462 102)">
+    <text x="0" y="76" font-family="Trebuchet MS, Verdana, sans-serif" font-size="58" font-weight="900" fill="#FFFFFF">Krishkanth Karthik</text>
+    <text x="4" y="122" font-family="Verdana, sans-serif" font-size="21" font-weight="700" fill="#EFFFFD">AI Builder  |  Full-Stack Developer  |  Mobile App Maker</text>
+    <text x="4" y="169" font-family="Consolas, Monaco, monospace" font-size="23" font-weight="700" fill="#28F7EA">practical products, data tools and mobile experiences</text>
     <rect x="4" y="196" width="430" height="6" rx="3" fill="#F6C66D">
-      <animate attributeName="width" values="220;520;220" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="250;570;250" dur="5.5s" repeatCount="indefinite"/>
     </rect>
   </g>
 

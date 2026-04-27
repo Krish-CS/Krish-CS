@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/krish-aurora-hero.svg" alt="Krishkanth Karthik animated aqua aurora banner" />
+  <img src="./assets/krish-brand-hero.svg" alt="Krishkanth Karthik animated aqua and gold profile banner" />
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=24&pause=850&color=25D6CF&center=true&vCenter=true&width=950&lines=I+build+AI+tools%2C+mobile+apps%2C+dashboards+and+web+platforms.;Aqua+aurora+ideas+with+golden+execution.;Scroll+the+project+orbit+and+jump+into+my+repositories." alt="Typing introduction" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=24&pause=850&color=25D6CF&center=true&vCenter=true&width=950&lines=I+build+AI+tools%2C+mobile+apps%2C+dashboards+and+web+platforms.;Aqua+ideas%2C+golden+details%2C+practical+products.;Explore+the+project+map+and+jump+into+my+repositories." alt="Typing introduction" />
 </p>
 
 <p align="center">
@@ -59,7 +59,7 @@ I am **Krishkanth Karthik**, a developer from Tiruchirappalli building across AI
   </a>
 </p>
 
-## 3D Aurora Project Orbit
+## 3D Project Map
 
 <p align="center">
   <a href="https://github.com/Krish-CS?tab=repositories">
@@ -164,6 +164,6 @@ Security labs    -> encryption, password checking and defensive learning
 
 <p align="center">
   <a href="https://github.com/Krish-CS?tab=repositories">
-    <img src="https://img.shields.io/badge/EXPLORE%20ALL%20REPOSITORIES-ENTER%20THE%20AURORA-25D6CF?style=for-the-badge&logo=github&logoColor=white&labelColor=07111F" alt="Explore all repositories" />
+    <img src="https://img.shields.io/badge/EXPLORE%20ALL%20REPOSITORIES-OPEN%20THE%20MAP-25D6CF?style=for-the-badge&logo=github&logoColor=white&labelColor=07111F" alt="Explore all repositories" />
   </a>
 </p>
