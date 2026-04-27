@@ -1,0 +1,122 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Krishkanth Karthik animated aurora banner</title>
+  <desc id="desc">An animated aqua, teal and gold aurora profile banner inspired by the Krish CS logo.</desc>
+  <defs>
+    <radialGradient id="sunGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(232 118) rotate(53) scale(238 160)">
+      <stop stop-color="#FFF7D6"/>
+      <stop offset=".34" stop-color="#F7CC79"/>
+      <stop offset=".74" stop-color="#27E7DD" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#07111D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aquaCore" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(245 210) rotate(90) scale(105)">
+      <stop stop-color="#64FFF6"/>
+      <stop offset=".56" stop-color="#25D6CF"/>
+      <stop offset="1" stop-color="#0D8BA4"/>
+    </radialGradient>
+    <linearGradient id="aurora" x1="0" x2="1200" y1="420" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07101D"/>
+      <stop offset=".22" stop-color="#073E51"/>
+      <stop offset=".44" stop-color="#13D6D2"/>
+      <stop offset=".68" stop-color="#F5C46E"/>
+      <stop offset="1" stop-color="#FFF8DE"/>
+      <animate attributeName="x1" values="-180;80;-180" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1050;1280;1050" dur="11s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="deep" x1="0" x2="1200" y1="0" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111F"/>
+      <stop offset=".32" stop-color="#0B1730"/>
+      <stop offset=".72" stop-color="#082C38"/>
+      <stop offset="1" stop-color="#09111C"/>
+    </linearGradient>
+    <filter id="blurA">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#00FFF0" flood-opacity=".38"/>
+      <feDropShadow dx="0" dy="-8" stdDeviation="22" flood-color="#F6C66D" flood-opacity=".30"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 .16"/>
+      </feComponentTransfer>
+    </filter>
+    <path id="arc" d="M145 330 C292 158 509 112 746 166 C904 202 997 178 1110 74"/>
+  </defs>
+
+  <rect width="1200" height="420" rx="34" fill="url(#deep)"/>
+  <rect width="1200" height="420" rx="34" fill="url(#aurora)" opacity=".17">
+    <animate attributeName="opacity" values=".12;.26;.12" dur="7s" repeatCount="indefinite"/>
+  </rect>
+
+  <g filter="url(#blurA)" opacity=".95">
+    <ellipse cx="240" cy="108" rx="260" ry="120" fill="url(#sunGlow)">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 38 18; 0 0" dur="9s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="820" cy="332" rx="430" ry="92" fill="#20F7E8" opacity=".34">
+      <animateTransform attributeName="transform" type="translate" values="-40 0; 55 -26; -40 0" dur="10s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="992" cy="86" rx="310" ry="92" fill="#F7C66B" opacity=".28">
+      <animateTransform attributeName="transform" type="translate" values="32 0; -50 18; 32 0" dur="8s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="540" cy="80" rx="300" ry="58" fill="#0EA7FF" opacity=".23">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 32 -12; 0 0" dur="6s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <g opacity=".70">
+    <path d="M40 340 C170 244 320 260 456 294 C628 338 768 304 917 234 C1044 174 1128 190 1180 222" stroke="#39FFF2" stroke-width="3" stroke-opacity=".22"/>
+    <path d="M0 92 C146 180 325 176 492 126 C674 72 876 70 1200 178" stroke="#F5C46E" stroke-width="2" stroke-opacity=".22"/>
+    <path d="M78 384 C246 246 447 216 637 248 C824 280 997 260 1200 126" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity=".20"/>
+  </g>
+
+  <g opacity=".58">
+    <use href="#arc" stroke="#25F4E9" stroke-width="2" stroke-dasharray="10 18">
+      <animate attributeName="stroke-dashoffset" values="0;-220" dur="9s" repeatCount="indefinite"/>
+    </use>
+    <use href="#arc" stroke="#F6C66D" stroke-width="7" stroke-opacity=".11" stroke-dasharray="2 26">
+      <animate attributeName="stroke-dashoffset" values="0;190" dur="8s" repeatCount="indefinite"/>
+    </use>
+  </g>
+
+  <g transform="translate(82 68)" filter="url(#softShadow)">
+    <circle cx="160" cy="146" r="118" fill="#0D1628" opacity=".78"/>
+    <circle cx="160" cy="146" r="106" fill="url(#aquaCore)"/>
+    <circle cx="160" cy="146" r="129" stroke="#F7D78B" stroke-opacity=".56" stroke-width="3" stroke-dasharray="16 12">
+      <animateTransform attributeName="transform" type="rotate" from="0 160 146" to="360 160 146" dur="22s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="146" r="138" stroke="#3FFFF3" stroke-opacity=".34" stroke-width="2" stroke-dasharray="4 16">
+      <animateTransform attributeName="transform" type="rotate" from="360 160 146" to="0 160 146" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <text x="160" y="156" text-anchor="middle" font-family="Trebuchet MS, Verdana, sans-serif" font-size="40" font-weight="800" fill="#FFFFFF" letter-spacing="1">KRISH</text>
+    <text x="278" y="155" text-anchor="middle" font-family="Trebuchet MS, Verdana, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF" stroke="#07111D" stroke-width="2">CS</text>
+  </g>
+
+  <g transform="translate(410 102)">
+    <text x="0" y="76" font-family="Trebuchet MS, Verdana, sans-serif" font-size="62" font-weight="900" fill="#FFFFFF">Krishkanth Karthik</text>
+    <text x="4" y="122" font-family="Verdana, sans-serif" font-size="22" font-weight="700" fill="#BFFFFA">AI Builder  |  Full-Stack Developer  |  Mobile App Maker</text>
+    <text x="4" y="169" font-family="Consolas, Monaco, monospace" font-size="24" font-weight="700" fill="#28F7EA">aurora-powered projects, data tools and mobile products</text>
+    <rect x="4" y="196" width="430" height="6" rx="3" fill="#F6C66D">
+      <animate attributeName="width" values="220;520;220" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g opacity=".75">
+    <circle cx="1046" cy="98" r="5" fill="#FFFFFF">
+      <animate attributeName="r" values="4;10;4" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".35;1;.35" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1092" cy="274" r="7" fill="#29F2E6">
+      <animate attributeName="r" values="6;15;6" dur="4.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".25;.95;.25" dur="4.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="640" cy="54" r="4" fill="#F8D78A">
+      <animate attributeName="r" values="3;11;3" dur="3.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".25;.9;.25" dur="3.9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <rect width="1200" height="420" rx="34" filter="url(#grain)" opacity=".35"/>
+  <rect x="2" y="2" width="1196" height="416" rx="32" stroke="#58FFF3" stroke-opacity=".28" stroke-width="4"/>
+</svg>

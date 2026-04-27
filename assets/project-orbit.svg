@@ -1,0 +1,100 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated 3D project orbit map</title>
+  <desc id="desc">A glowing orbit map of Krish-CS repositories in aqua, teal, white and gold.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520">
+      <stop stop-color="#07111F"/>
+      <stop offset=".52" stop-color="#062B36"/>
+      <stop offset="1" stop-color="#0B111D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(602 260) rotate(90) scale(245 470)">
+      <stop stop-color="#35FFF1" stop-opacity=".72"/>
+      <stop offset=".38" stop-color="#25D6CF" stop-opacity=".28"/>
+      <stop offset=".74" stop-color="#F7C66D" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#07111F" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="13" stdDeviation="13" flood-color="#000000" flood-opacity=".55"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="9" flood-color="#25F4E9" flood-opacity=".32"/>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <style>
+      .label{font-family:Trebuchet MS,Verdana,sans-serif;font-size:20px;font-weight:800;fill:#fff}
+      .sub{font-family:Consolas,Monaco,monospace;font-size:13px;font-weight:700;fill:#BFFFFA}
+      .node{filter:url(#shadow)}
+    </style>
+  </defs>
+  <rect width="1200" height="520" rx="34" fill="url(#bg)"/>
+  <ellipse cx="604" cy="262" rx="480" ry="185" fill="url(#glow)">
+    <animate attributeName="rx" values="430;510;430" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".55;.9;.55" dur="8s" repeatCount="indefinite"/>
+  </ellipse>
+  <g filter="url(#soft)">
+    <circle cx="210" cy="112" r="96" fill="#F7C66D" opacity=".26">
+      <animateTransform attributeName="transform" type="translate" values="0 0;38 18;0 0" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="968" cy="386" r="130" fill="#29F2E6" opacity=".23">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-42 -20;0 0" dur="9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g transform="translate(600 260)">
+    <ellipse rx="455" ry="172" stroke="#33FFF3" stroke-opacity=".42" stroke-width="2" stroke-dasharray="9 16">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse rx="360" ry="128" stroke="#F7C66D" stroke-opacity=".46" stroke-width="2" stroke-dasharray="4 14">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse rx="250" ry="86" stroke="#FFFFFF" stroke-opacity=".24" stroke-width="1.5" stroke-dasharray="2 12">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="20s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <g class="node" transform="translate(504 194)">
+    <rect width="192" height="112" rx="24" fill="#0A1728" stroke="#35FFF1" stroke-opacity=".75"/>
+    <circle cx="96" cy="26" r="48" fill="#27DCD5"/>
+    <text x="96" y="35" text-anchor="middle" class="label" font-size="30">KRISH</text>
+    <text x="96" y="82" text-anchor="middle" class="sub">24 PUBLIC REPOS</text>
+  </g>
+  <g class="node" transform="translate(82 88)">
+    <rect width="230" height="80" rx="18" fill="#102033" stroke="#F7C66D" stroke-opacity=".8"/>
+    <text x="22" y="34" class="label">SKILLSHARE</text>
+    <text x="22" y="57" class="sub">Dart / mobile marketplace</text>
+    <animateTransform attributeName="transform" type="translate" values="82 88;82 76;82 88" dur="5.8s" repeatCount="indefinite"/>
+  </g>
+  <g class="node" transform="translate(842 82)">
+    <rect width="246" height="80" rx="18" fill="#102033" stroke="#35FFF1" stroke-opacity=".8"/>
+    <text x="22" y="34" class="label">PORTFOLIO</text>
+    <text x="22" y="57" class="sub">TypeScript / web identity</text>
+    <animateTransform attributeName="transform" type="translate" values="842 82;842 96;842 82" dur="6.4s" repeatCount="indefinite"/>
+  </g>
+  <g class="node" transform="translate(132 355)">
+    <rect width="260" height="80" rx="18" fill="#102033" stroke="#35FFF1" stroke-opacity=".8"/>
+    <text x="22" y="34" class="label">AI + DATA</text>
+    <text x="22" y="57" class="sub">Python / notebooks / R</text>
+    <animateTransform attributeName="transform" type="translate" values="132 355;132 370;132 355" dur="7s" repeatCount="indefinite"/>
+  </g>
+  <g class="node" transform="translate(802 350)">
+    <rect width="276" height="80" rx="18" fill="#102033" stroke="#F7C66D" stroke-opacity=".8"/>
+    <text x="22" y="34" class="label">WEB + APPS</text>
+    <text x="22" y="57" class="sub">JS / HTML / Kotlin / Flask</text>
+    <animateTransform attributeName="transform" type="translate" values="802 350;802 334;802 350" dur="6.2s" repeatCount="indefinite"/>
+  </g>
+  <g opacity=".65">
+    <path d="M312 128 C444 176 464 210 504 226" stroke="#F7C66D" stroke-width="2" stroke-dasharray="8 13">
+      <animate attributeName="stroke-dashoffset" values="0;-180" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M842 124 C754 164 718 198 696 226" stroke="#35FFF1" stroke-width="2" stroke-dasharray="8 13">
+      <animate attributeName="stroke-dashoffset" values="0;-180" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M392 396 C464 338 510 310 536 292" stroke="#35FFF1" stroke-width="2" stroke-dasharray="8 13">
+      <animate attributeName="stroke-dashoffset" values="0;-180" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M802 392 C746 332 706 304 674 290" stroke="#F7C66D" stroke-width="2" stroke-dasharray="8 13">
+      <animate attributeName="stroke-dashoffset" values="0;-180" dur="7s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <text x="600" y="484" text-anchor="middle" font-family="Consolas,Monaco,monospace" font-size="20" font-weight="800" fill="#BFFFFA">click the badges below to travel into each repository</text>
+  <rect x="2" y="2" width="1196" height="516" rx="32" stroke="#49FFF4" stroke-opacity=".26" stroke-width="4"/>
+</svg>
